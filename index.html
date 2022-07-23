@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supermarket</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    
+</head>
+<body>
+    <nav >
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#"> Fresh Choice</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"> Fresh Choice</a></span>
+                    <i class='bx bx-x sidebarClose' ></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">Recipe</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Contact </a></li>
+                </ul>
+            </div>
+
+                <div class="dark-light-searchbox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun' ></i>
+                    </div>
+
+                    <div class="searchbox">
+                        <div class="searchToggle">
+                            <i class='bx bx-x cancel' ></i>
+                            <i class='bx bx-search-alt-2 search' ></i>
+                        </div>
+
+                        <div class="search-field">
+                            <input type="text" name="" placeholder="Search..." id="">
+                            <i class="bx bx-search "></i>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="cartbox">
+                        <div class="cartToggle">
+                            <i class='bx bx-x cancel' ></i>
+                            <i class='bx bx-cart cart' ></i>
+                        </div>
+
+                        <div class="cart-field">
+                            <!-- <input type="text" name="" placeholder="Search..." id=""> -->
+                            <div class="cart-details">
+                                
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+            
+        </div>
+    </nav>
+    <section id="home">
+        <div class="home">
+            <h1>WE GROW FRESH FOODS</h1>
+            <h2>UP TO 30% OFF</h2>
+            <a href="#products"><button >Buy Now  <i class='bx bx-right-arrow-alt' ></i></button></a>
+            
+        </div>
+    </section>
+    <section id="products">
+        <div class="products">
+            <h1 id="categories">CATEGORIES</h1>
+            
+            <div class="card" >
+                <div class="catePic">
+                    <img src="vegetables.png" alt="" width="200px" height="200px">
+                </div>
+                <a href="#vegetables"><h2 >VEGETABLES</h2></a>
+                
+            </div>
+            <div class="card">
+                <div class="catePic">
+                    <img src="fruits.png" alt="" width="200px" height="200px">
+
+                </div>
+                <a href="#"><h2 >FRUITS</h2></a>
+            </div>
+            <div class="card">
+                <div class="catePic">
+                    <img src="nuts.png" alt="" width="200px" height="200px">
+
+                </div>
+                <a href="#"><h2 >NUTS</h2></a>
+            </div>
+            
+        </div>
+    </section>
+    <section id="vegetables">
+        <h1>Vegetables</h1>
+        <!-- <div class="allItems">
+            
+            
+            <div class="items">
+                <div class="item-imgtop"></div>
+                <img src="vegetables.png" alt="" width="200px" height="200px">
+
+                <div class="item-desc">
+                    <div class="contentBx">
+
+                        <h2>Nike Shoes</h2>
+        
+                        <div class="size">
+                            <h3>Size :</h3>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                        </div>
+        
+                        <div class="color">
+        
+                            <h3>Color :</h3>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+    
+            </div>   
+        </div> -->
+        <div class="container">
+            <div class="card ">
+                <div class="imgBx">
+                    <img src="./itemImages/cabbage.png" alt="vege img 1">
+                </div>
+    
+                <div class="contentBx">
+    
+                    <h2>Cabbage</h2>
+    
+                    <div class="size">
+                        <h3>Quan.:</h3>
+                        <span>500g</span>
+                        <span>1kg</span>
+                        <span>2kg</span>
+                        <span>5kg</span>
+                    </div>
+                    <button id="itembtn" value="cabbage" onclick="cart()">Buy Now</button> 
+                </div>
+    
+            </div>
+            <div class="card" >
+                <div class="imgBx">
+                    <img src="./itemImages/Salad Leaves.png" alt="vege img 1">
+                </div>
+    
+                <div class="contentBx">
+    
+                    <h2>Salad Leaves</h2>
+    
+                    <div class="size">
+                        <h3>Quan.: </h3>
+                        <span>500g</span>
+                        <span>1kg</span>
+                        <span>2kg</span>
+                        <span>5kg</span>
+                    </div>
+                    <button id="itemsalad" value="salad" onclick="cart()">Buy Now</button> 
+
+                    
+                </div>
+    
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="./itemImages/cucumber.png" alt="vege img 1">
+                </div>
+    
+                <div class="contentBx">
+    
+                    <h2>Cucumber</h2>
+    
+                    <div class="size">
+                        <h3>Quan.: </h3>
+                        <span>500g</span>
+                        <span>1kg</span>
+                        <span>2kg</span>
+                        <span>5kg</span>
+                    </div>
+                    <button id="itemsalad" value="salad" onclick="cart()">Buy Now</button> 
+
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
